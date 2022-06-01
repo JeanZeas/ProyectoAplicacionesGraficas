@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <title>Document</title>
+</head>
+<body>
+    <body id="particles-js">
+        <div class="animated bounceInDown">
+          <div class="container">
+            <span class="error animated tada" id="msg"></span>
+            <form name="form1" class="box" onsubmit="return RegisterAccount()">
+              <h4>Admin<span>Dashboard</span></h4>
+              <h5>Register your account</h5>
+                <label id="error"></label>
+                <input type="text" placeholder="Username" autocomplete="off" id="Usuario" required>
+                <input type="email" placeholder="Email" autocomplete="off" id="Correo" required>
+                <input type="password" name="password" placeholder="Passsword" id="pwd" autocomplete="off" required>
+                <input type="password" name="password" placeholder="Repeat Password" id="pwd2" autocomplete="off" required>
+                <input type="button" value="Register" class="btn1" id="MostrarModal" onclick="RegisterAccount()">
+              </form>
+                <a href="/Login.html" class="dnthave">You have an account, please login!</a>
+          </div> 
+
+        
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>Cuenta registrada exitosamente</h4>
+            </div>
+        </div>
+        <script src="/Assets/js/Index.js"></script>
+</body>
+</html>
